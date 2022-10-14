@@ -1,0 +1,94 @@
+class Library:
+  def __init__(self, name, address, city):
+    self.city = city
+    self.address = address
+    self.name = name
+  def display(self):
+    print('Название библиотеки: ', self.name)
+    print('Город: ', self.city)
+    print('Адрес: ', self.address)
+bib1 = Library('Мама','улица дом дом дом','ss')
+bib2 = Library('Чья','дом дом улица дом', 'ss')
+bib1.display()
+bib2.display()
+print('')
+class LibraryFond:
+  def __init__(self, name, biblioteka, kolkn, kolju, kolga, kolsborn, koldis, kolref):
+    self.name = name
+    self.biblioteka = biblioteka
+    self.kolkn = kolkn
+    self.kolju = kolju
+    self.kolga = kolga
+    self.kolsborn = kolsborn
+    self.koldis = koldis
+    self.kolref = kolref
+  def display(self):
+    print('Название фонда библиотеки: ', self.name)
+    print('Библиотека: ', self.biblioteka)
+    print('Кол-во книг: ', self.kolkn)
+    print('Кол-во журналов: ', self.kolju)
+    print('Кол-во газет: ', self.kolga)
+    print('Кол-во сборников: ', self.kolsborn)
+    print('Кол-во диссертаций: ', self.koldis)
+    print('Кол-во рефератов: ', self.kolref)
+bibfo1 = LibraryFond('хехе','хаха', 15, 2, 3, 4, 5, 1)
+bibfo2 = LibraryFond('хихи','хыхы', 15, 2, 3, 4, 5, 1)
+bibfo1.display()
+bibfo2.display()
+print('')
+class LiteratureTip:
+  def __init__(self, name):
+     self.name = name
+  def display(self):
+    print('Тип литературы: ', self.name)
+lt = LiteratureTip('чонгук куки')
+lt.display()
+print('')
+class Employee:
+  def __init__(self, name, biblioteka, dolzh, godrozhd, godpostup, obrazov, zp):
+    self.name = name
+    self.biblioteka = biblioteka
+    self.dolzh = dolzh
+    self.godrozhd = godrozhd
+    self.godpostup = godpostup
+    self.obrazov = obrazov
+    self.zp = zp
+  def display(self):
+    print('Фамилия работника: ', self.name)
+    print('Библиотека: ',  self.biblioteka)
+    print('Год рождения: ', self.godrozhd)
+    print('Год поступления на работу: ', self.godpostup)
+    print('Образование: ', self.obrazov)
+    print('Зарплата', self.zp, 'рубля(-ей)')
+emp1 = Employee('Чонгук', 'хихи', 1999, 1999, 'кто', 9, 3)
+emp2 = Employee('Ким Чэн Ын', 'хаха', 1222, 1222, 'а', 4, 9)
+emp3 = Employee('Гитлер', 'хихи', 1324, 1324, 'что', 5, 0)
+emp1.display()
+emp2.display()
+emp3.display()
+print('')
+class Fond:
+  def __init__(self, fond, sotrudnik, date, istochnik, tiplit, izdat, dataizd, kolekz):
+    self.fond = fond
+    self.sotrudnik = sotrudnik
+    self.date = date
+    self.istochnik = istochnik
+    self.tiplit = tiplit
+    self.izdat = izdat
+    self.dataizd = dataizd
+    self.kolekz = kolekz
+  def display(self):
+    print('Фонд: ', self.fond)
+    print('Сотрудник: ', self.sotrudnik)
+    print('Дата: ', self.date)
+    print('Источник: ', self.istochnik)
+    print('Тип литературы: ', self.tiplit)
+    print('Издательство: ', self.izdat)
+    print('Дата издания: ', self.dataizd)
+    print('Количество экземпляров: ', self.kolekz)
+fond1 = Fond('ава', 'ываыва', '20.2.12.', 'ываы', 'ф', 'ываыва', '3.3.1', 1)
+fond2 = Fond('вав', 'ываыв', '2.3.4', 'ываыв', 'выаыв', 'ыва', '3.7.7', 5)
+fond3 = Fond('вава', 'ввавав', '3.4.2', 'ываыва', 'ываыв', 'выаыв', '5.5.5', 3)
+fond1.display()
+fond2.display()
+fond3.display()
